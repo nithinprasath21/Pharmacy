@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.button {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Padding for buttons */
+    font-size: 20px; /* Larger font size */
+    color: white;
+    background-color: #007BFF; /* Button color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    
+    width: 30%; /* Width of each button */
+    aspect-ratio: 1 / 1; /* Maintain square shape */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Button Group Layout */
+.button-group {
+   display: flex;
+   flex-direction: column; /* Stack button rows */
+   align-items: center; /* Center buttons */
+}
+
+.button-container {
+   display: flex;
+   justify-content: center; /* Center buttons in each row */
+   gap: 20px; /* Space between buttons */
+   margin-bottom: 20px; /* Space between rows */
+}
+
+/* Large Button Style (for Transactions) */
+.large-button {
+   width: 30%; /* Same width for consistency, can be adjusted if needed */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above table */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #4CAF50; /* Header color */
+    color: white;
+}
+
+td {
+    padding: 10px; /* Padding for table cells */
+}
+
+/* Search Section Styles */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    height: 38px; /* Match height with button */
+}
+
+.search-form button {
+    height: 38px; /* Match height with input field */
+}
+
+/* Form and Input Styles */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Space between input fields */
+}
+
+.input-row label,
+.input-row input,
+.input-row select {
+    width: 45%; /* Width for labels and inputs */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+   .input-row {
+       flex-direction: column; /* Stack vertically on small screens */
+       gap: 10px; /* Reduce gap on small screens */
+   }
+
+   .input-row label,
+   .input-row input,
+   .input-row select {
+       width: 100%; /* Full width on small screens */
+       margin-bottom: 10px; /* Space below each element */
+   }
+   
+   .button-container {
+       flex-direction: column; /* Stack buttons vertically on small screens */
+       align-items: center;
+       gap: 10px; /* Reduce gap on small screens */
+   }
+}
